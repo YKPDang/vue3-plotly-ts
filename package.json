@@ -1,6 +1,19 @@
 {
-  "name": "vue3-plotly-ts",
-  "version": "1.0.3",
+  "name": "@funnypocketbook/vue3-plotly-ts",
+  "version": "1.0.4",
+  "description": "Vue 3 + TypeScript wrapper for Plotly.js (fork of boscoh/vue3-plotly-ts)",
+  "license": "MIT",
+  "author": "FunnyPocketBook",
+  "contributors": [
+    {
+      "name": "Bosco Ho",
+      "url": "https://github.com/boscoh"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YKPDang/vue3-plotly-ts"
+  },
   "type": "module",
   "files": [
     "dist"
@@ -13,9 +26,9 @@
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "vite-plugin-dts": "^3.9.1",
-    "vue": "^3.4.21"
+  "peerDependencies": {
+    "vue": "^3.4.0",
+    "plotly.js-dist-min": "^2.0.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.4",
@@ -23,9 +36,9 @@
     "@types/plotly.js-dist-min": "^2.3.4",
     "@vitejs/plugin-vue": "^5.0.4",
     "path": "^0.12.7",
-    "plotly.js-dist-min": "^2.32.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1",
     "vue-tsc": "^2.0.6"
   }
 }

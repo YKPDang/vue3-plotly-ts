@@ -8,6 +8,11 @@ Plotly.js component for Vue3 in (optional) Typescript:
 - attach to ResizeObserver
 - propagate `plotly_*` event handlers
 
+## Attribution
+
+This package is a maintained fork of [vue3-plotly-ts](https://github.com/boscoh/vue3-plotly-ts) by Bosco Ho.  
+All credit for the original implementation goes to him. This fork only repackages the library for npm and adds build/type fixes.
+
 ## Live demo
 
 <https://boscoh.github.io/vue3-plotly-ts/>
@@ -62,10 +67,10 @@ See the source for the demo for a worked example:
 
 ## Component props
 
-* data `Plotly.Data[]` - array of objects, see [documentation](https://plotly.com/javascript/reference)
-* layout `Partial<Plotly.Layout>` - layout on the page,
+- data `Plotly.Data[]` - array of objects, see [documentation](https://plotly.com/javascript/reference)
+- layout `Partial<Plotly.Layout>` - layout on the page,
   see [documentation](https://plotly.com/javascript/reference/layout)
-* config `Partial<Plotly.Config>` - configuration of
+- config `Partial<Plotly.Config>` - configuration of
   interactivity [documentation](https://plotly.com/javascript/configuration-options)
 
 ## Event handlers
@@ -75,34 +80,34 @@ click on a data point. These are propagated to VuePlotly as
 event handlers which expect a callback. These are the expected
 callback arguments:
 
-* plotly_click `callback(event: Plotly.PlotMouseEvent)`
-* plotly_hover `callback(event: Plotly.PlotHoverEvent)`
-* plotly_unhover `callback(event: Plotly.PlotMouseEvent)`
-* plotly_selecting `callback(event: Plotly.PlotSelectionEvent)`
-* plotly_selected `callback(event: Plotly.PlotSelectionEvent)`
-* plotly_restyle `callback(event: Plotly.PlotRestyleEvent)`
-* plotly_relayout `callback(event: Plotly.PlotRelayoutEvent)`
-* plotly_clickannotation `callback(event: Plotly.ClickAnnotationEvent)`
-* plotly_legendclick `callback(event: Plotly.LegendClickEvent)`
-* plotly_legenddoubleclick `callback(event: Plotly.LegendClickEvent)`
-* plotly_sliderchange `callback(event: Plotly.SliderChangeEvent)`
-* plotly_sliderend `callback(event: Plotly.SliderEndEvent)`
-* plotly_sliderstart `callback(event: Plotly.SliderStartEvent)`
-* plotly_sunburstclick `callback(event: Plotly.SunburstClickEvent)`
-* plotly_event `callback(event: any)`
-* plotly_beforeplot `callback(event: Plotly.BeforePlotEvent)`
-* plotly_afterexport `callback()`
-* plotly_afterplot `callback()`
-* plotly_animated `callback()`
-* plotly_animationinterrupted `callback()`
-* plotly_autosize `callback()`
-* plotly_beforeexport `callback()`
-* plotly_deselect `callback()`
-* plotly_doubleclick `callback()`
-* plotly_framework `callback()`
-* plotly_redraw `callback()`
-* plotly_transitioning `callback()`
-* plotly_transitioninterrupted `callback()`
+- plotly_click `callback(event: Plotly.PlotMouseEvent)`
+- plotly_hover `callback(event: Plotly.PlotHoverEvent)`
+- plotly_unhover `callback(event: Plotly.PlotMouseEvent)`
+- plotly_selecting `callback(event: Plotly.PlotSelectionEvent)`
+- plotly_selected `callback(event: Plotly.PlotSelectionEvent)`
+- plotly_restyle `callback(event: Plotly.PlotRestyleEvent)`
+- plotly_relayout `callback(event: Plotly.PlotRelayoutEvent)`
+- plotly_clickannotation `callback(event: Plotly.ClickAnnotationEvent)`
+- plotly_legendclick `callback(event: Plotly.LegendClickEvent)`
+- plotly_legenddoubleclick `callback(event: Plotly.LegendClickEvent)`
+- plotly_sliderchange `callback(event: Plotly.SliderChangeEvent)`
+- plotly_sliderend `callback(event: Plotly.SliderEndEvent)`
+- plotly_sliderstart `callback(event: Plotly.SliderStartEvent)`
+- plotly_sunburstclick `callback(event: Plotly.SunburstClickEvent)`
+- plotly_event `callback(event: any)`
+- plotly_beforeplot `callback(event: Plotly.BeforePlotEvent)`
+- plotly_afterexport `callback()`
+- plotly_afterplot `callback()`
+- plotly_animated `callback()`
+- plotly_animationinterrupted `callback()`
+- plotly_autosize `callback()`
+- plotly_beforeexport `callback()`
+- plotly_deselect `callback()`
+- plotly_doubleclick `callback()`
+- plotly_framework `callback()`
+- plotly_redraw `callback()`
+- plotly_transitioning `callback()`
+- plotly_transitioninterrupted `callback()`
 
 See the [Plotly event handler page](https://plotly.com/javascript/plotlyjs-events/) for further details.
 
